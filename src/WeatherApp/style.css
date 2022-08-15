@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap");
+
+
+* {
+  font-family: "Red Hat Mono", monospace;
+}
+.myfont {
+  font-family: "Red Hat Mono", monospace !important;
+}
+
+body {
+  background-color: bisque;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 85vh;
+}
+/* card */
+.card-box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 600px;
+}
+
+.input-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.fa-search {
+  margin-right: 5px;
+}
+.input-controls > input {
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 8px;
+  font-size: 18px;
+  margin: 5px 5px;
+  border: 1px solid #aeceef;
+  color: #6293d5;
+  text-transform: uppercase;
+}
+
+.input-controls > button {
+  padding: 11px 10px !important;
+}
+
+.icon1 {
+  margin: 20px 0px;
+  font-size: 70px;
+  display: block !important;
+  animation: icon-movement 3s ease-in-out infinite alternate-reverse both;
+}
+@keyframes icon-movement {
+  from {
+    transform: translate(100px, 0px);
+  }
+  to {
+    transform: translate(360px, 0px);
+  }
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* info */
+.tem {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px 10px;
+}
+.icon-dot {
+  font-size: 10px;
+  position: absolute;
+  color: #849ed8;
+}
+
+.condition {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 0px 10px;
+}
+.city-name {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0px 10px;
+}
+
+.date,
+.time {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0px 10px;
+  text-align: center;
+}
+.subtitle-1 {
+  font-size: 15px;
+  text-transform: capitalize;
+  margin: 0px 10px;
+  text-align: center;
+}
+
+.info-icon {
+  font-size: 25px !important;
+  color: #849ed8;
+}
+.info2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.info2 > ul {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+}
+
+.box1,
+.box2 {
+  text-transform: capitalize;
+  text-align: center;
+}
+.box1 {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-color: violet;
+  }
+  .datetime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .info2 > ul {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .subtitle-1 {
+    margin-bottom: 10px;
+  }
+  .icon1 {
+    margin: 20px 0px;
+    font-size: 70px;
+    display: block !important;
+    animation: icon-movement 3s ease-in-out infinite alternate-reverse both;
+  }
+  @keyframes icon-movement {
+    from {
+      transform: translate(0px, 0px);
+    }
+    to {
+      transform: translate(160px, 0px);
+    }
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 400px) {
+  body {
+    background-color: cyan;
+  }
+  .datetime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .info2 > ul {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+}
