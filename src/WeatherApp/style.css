@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap");
 
-
 * {
   font-family: "Red Hat Mono", monospace;
 }
@@ -16,7 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  min-height: 85vh;
+  min-height: 89vh;
 }
 /* card */
 .card-box {
