@@ -85,8 +85,8 @@ const WeatherCard = ({ isError, city, setCity, tempInfo, getWeatherData, loading
                 </div>
                 <div className="show-result">
                   {loading ? <Skeleton variant="rectangular" height={360} /> : <>
-                    {isError ? (
-                      <h1 className="text-capitalize text-center">No Data Found</h1>
+                    {isError?.error && isError?.message ? (
+                      <h1 className="text-capitalize text-center">{isError?.message}</h1>
                     ) : (
                       <>
                         <div className="icon-box">
